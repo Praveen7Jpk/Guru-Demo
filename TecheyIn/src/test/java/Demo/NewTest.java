@@ -26,14 +26,16 @@ public class NewTest {
 		String title = driver.getTitle();				 
 		Assert.assertTrue(title.contains("Demo Guru99 Page")); 	
 		System.out.println("The System has Successfully checked the Bank Page");
-		//Test Creation
-		logger=report.createTest("WebSite Guru99 Page", "Check for Title of the page");
+		//Test Creation_01
+		logger=report.createTest("Guru99 Bank Website", "Check for Title of the page");
 	    //Logs Test Results 
 		logger.pass("Guru 99 WebTitle Test Passed Successfully");
 	}	  
 	
 	@Test(priority=1)
 	public void TestPrint() {
+		//Test Creation_01
+		logger=report.createTest("Website Logoff","Website checked and logged off");
 		System.out.println("The System has Successfully Finsihed First Jenkins Integration Project");
 		logger.log(Status.PASS, "Checking Pass Method");
 		//logger.fail("Failed Method Verification");

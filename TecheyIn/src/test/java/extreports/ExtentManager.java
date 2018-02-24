@@ -28,9 +28,9 @@ public class ExtentManager {
 	// make the charts visible on report open
         htmlReporter.config().setChartVisibilityOnOpen(true);
 		
-      //  htmlReporter.config().getLevel();
-      //  htmlReporter.config().getFilePath();
-      //  htmlReporter.config().getTestViewChartLocation();
+        htmlReporter.config().getLevel();
+        htmlReporter.config().getFilePath();
+        htmlReporter.config().getTestViewChartLocation();
         
         htmlReporter.config().setDocumentTitle("Guru99 Bank automation report");
         htmlReporter.config().setReportName("Regression Demo cycle");

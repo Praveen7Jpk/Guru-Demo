@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="47617" started-at="2018-02-24T13:00:09Z" finished-at="2018-02-24T13:00:57Z">
+  <suite name="Default suite" duration-ms="29998" started-at="2018-02-24T14:02:36Z" finished-at="2018-02-24T14:03:06Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="47617" started-at="2018-02-24T13:00:09Z" finished-at="2018-02-24T13:00:57Z">
+    <test name="Default test" duration-ms="29998" started-at="2018-02-24T14:02:36Z" finished-at="2018-02-24T14:03:06Z">
       <class name="Demo.NewTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:Demo.NewTest@3abbfa04]" name="beforeTest" is-config="true" duration-ms="21176" started-at="2018-02-24T18:30:09Z" finished-at="2018-02-24T18:30:31Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:Demo.NewTest@3abbfa04]" name="beforeTest" is-config="true" duration-ms="9135" started-at="2018-02-24T19:32:36Z" finished-at="2018-02-24T19:32:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="testEasy()[pri:0, instance:Demo.NewTest@3abbfa04]" name="testEasy" duration-ms="23623" started-at="2018-02-24T18:30:31Z" finished-at="2018-02-24T18:30:54Z">
+        <test-method status="PASS" signature="testEasy()[pri:0, instance:Demo.NewTest@3abbfa04]" name="testEasy" duration-ms="17547" started-at="2018-02-24T19:32:46Z" finished-at="2018-02-24T19:33:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEasy -->
-        <test-method status="PASS" signature="TestPrint()[pri:0, instance:Demo.NewTest@3abbfa04]" name="TestPrint" duration-ms="13" started-at="2018-02-24T18:30:54Z" finished-at="2018-02-24T18:30:54Z">
+        <test-method status="PASS" signature="TestPrint()[pri:0, instance:Demo.NewTest@3abbfa04]" name="TestPrint" duration-ms="6" started-at="2018-02-24T19:33:03Z" finished-at="2018-02-24T19:33:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestPrint -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:Demo.NewTest@3abbfa04]" name="afterTest" is-config="true" duration-ms="2742" started-at="2018-02-24T18:30:54Z" finished-at="2018-02-24T18:30:57Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:Demo.NewTest@3abbfa04]" name="afterTest" is-config="true" duration-ms="3280" started-at="2018-02-24T19:33:03Z" finished-at="2018-02-24T19:33:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
