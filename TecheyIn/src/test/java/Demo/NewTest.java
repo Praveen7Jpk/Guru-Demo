@@ -27,13 +27,13 @@ public class NewTest {
 		Assert.assertTrue(title.contains("Demo Guru99 Page")); 	
 		System.out.println("The System has Successfully checked the Bank Page");
 		logger=report.createTest("WebSite Guru99 Page", "Check for Title of the page");
-		logger.pass("Test Passed Successfully");
+		logger.pass("Guru 99 WebTitle Test Passed Successfully");
 	}	  
 	
 	@Test(priority=1)
 	public void TestPrint() {
 		System.out.println("The System has Successfully Finsihed First Jenkins Integration Project");
-		logger.log(Status.FAIL, "Checking Fail Method");
+		logger.log(Status.PASS, "Checking Pass Method");
 		//logger.fail("Failed Method Verification");
 	}
 	@BeforeTest

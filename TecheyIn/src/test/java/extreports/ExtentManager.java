@@ -9,7 +9,7 @@ public class ExtentManager {
 	private static ExtentReports extent;
 	private static ExtentTest test;
 	private static ExtentHtmlReporter htmlReporter;
-	private static String filePath = "./extentreport.html";
+	private static String filePath = "C:\\Users\\praveen kumar J\\Documents\\Reports\\extentreport.html";
 	
 	
 	public static ExtentReports GetExtent(){
