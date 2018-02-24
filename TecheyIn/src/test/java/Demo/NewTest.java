@@ -17,11 +17,11 @@ public class NewTest {
 		String title = driver.getTitle();				 
 		Assert.assertTrue(title.contains("Demo Guru99 Page")); 	
 		System.out.println("The System has Successfully checked the Bank Page");
-	}	
+	}	  
 	
 	@Test(priority=1)
 	public void TestPrint() {
-		System.out.println("The System has Successfully checked the Bank Page");
+		System.out.println("The System has Successfully Finsihed First Project");
 	}
 	@BeforeTest
 	public void beforeTest() {	
