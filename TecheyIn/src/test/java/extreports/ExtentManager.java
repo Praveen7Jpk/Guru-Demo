@@ -28,6 +28,7 @@ public class ExtentManager {
 	// make the charts visible on report open
         htmlReporter.config().setChartVisibilityOnOpen(true);
 		
+        htmlReporter.config().getResourceCDN();
         htmlReporter.config().getLevel();
         htmlReporter.config().getFilePath();
         htmlReporter.config().getTestViewChartLocation();
