@@ -16,9 +16,9 @@ public class ExtentManager {
 		if (report != null)
                     return report;   //avoid creating new instance of html file
 		report = new ExtentReports();		
-			report.attachReporter(getHtmlReporter());
+		report.attachReporter(getHtmlReporter());
 			
-			return report;
+		return report;
 	}
  
 	private static ExtentHtmlReporter getHtmlReporter() {
