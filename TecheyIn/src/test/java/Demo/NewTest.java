@@ -26,7 +26,9 @@ public class NewTest {
 		String title = driver.getTitle();				 
 		Assert.assertTrue(title.contains("Demo Guru99 Page")); 	
 		System.out.println("The System has Successfully checked the Bank Page");
+		//Test Creation
 		logger=report.createTest("WebSite Guru99 Page", "Check for Title of the page");
+	    //Logs Test Results 
 		logger.pass("Guru 99 WebTitle Test Passed Successfully");
 	}	  
 	
