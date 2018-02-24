@@ -21,7 +21,7 @@ public class NewTest {
 	
 	@Test(priority=1)
 	public void TestPrint() {
-		System.out.println("The System has Successfully Finsihed First Project");
+		System.out.println("The System has Successfully Finsihed First All Integration Project");
 	}
 	@BeforeTest
 	public void beforeTest() {	
