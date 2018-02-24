@@ -13,10 +13,10 @@ import com.aventstack.extentreports.Status;
 
 import extreports.ExtentManager;
 
-public class NewTest {
+public class NewTest extends ExtentManager {
 	
-	public static ExtentReports report;
-	public static ExtentTest logger;
+	public ExtentReports report;
+	public ExtentTest logger;
 	public WebDriver driver;
 	
 	@Test(priority=0)				

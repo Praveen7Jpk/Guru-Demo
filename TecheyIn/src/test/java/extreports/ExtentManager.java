@@ -8,8 +8,8 @@ public class ExtentManager {
 	
 	private static ExtentReports report;
 	private static ExtentTest logger;
-	private static ExtentHtmlReporter htmlReporter;
-	private static String filePath = "C:\\Users\\praveen kumar J\\Documents\\Reports\\ExtentReport_Results.html";
+	public static ExtentHtmlReporter htmlReporter;
+	public static String filePath = "C:\\Users\\praveen kumar J\\Documents\\Reports\\ExtentReport_Results.html";
 	
 	
 	public static ExtentReports GetExtent(){
