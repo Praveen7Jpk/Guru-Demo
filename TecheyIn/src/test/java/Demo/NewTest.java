@@ -19,13 +19,15 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.utils.FileUtil;
 
+import ExcelFile.ExcelData;
 import extreports.ExtentManager;
 
 public class NewTest  {
 	
-	public ExtentReports report;
-	public ExtentTest logger;
-	public WebDriver driver;
+	 ExtentReports report;
+	 ExtentTest logger;
+	 WebDriver driver;
+	 String U1;
 	
 	@Test(priority=1)				
 	public void Website_Page() {	
@@ -58,12 +60,12 @@ public class NewTest  {
 	}	  
 	
 	@Test(priority=2)
-	public void Login(){
-	     ExcelData ed=new ExcelData();
-		 System.out.println("The Website is up Username : "+String.valueOf(ed.User));
+	public void Login() throws IOException{
+	    // String U1=ExcelData.Username();
+		 //System.out.println("The Website is up Username : "+U1);
 		//User Login Credentials 
-		 driver.findElement(By.name("uid")).sendKeys(String.valueOf(ed.User));
-		 driver.findElement(By.name("password")).sendKeys(String.valueOf(ed.Password));
+		 driver.findElement(By.name("uid")).sendKeys(ExcelData.User);
+		 driver.findElement(By.name("password")).sendKeys(ExcelData.Password);
 		 driver.findElement(By.name("btnLogin")).click();
 		 String Page_title="Guru99 Bank Manager HomePage";
 		 Assert.assertEquals(driver.getTitle(), Page_title);
@@ -78,7 +80,7 @@ public class NewTest  {
 		
 		try {
 			 // now copy the  screenshot to desired location using copyFile //method
-			FileUtils.copyFile(Src, new File("C:\\Users\\praveen kumar J\\Documents\\ScreenShots\\ScreenShot01.png"));
+			FileUtils.copyFile(Src, new File("C:\\Users\\praveen kumar J\\Documents\\ScreenShots\\ScreenShot03.png"));
 			}
 			 
 			catch (IOException e)
@@ -93,6 +95,12 @@ public class NewTest  {
 	    System.setProperty("webdriver.chrome.driver", "C:\\Users\\praveen kumar J\\Documents\\ChromeDriver\\chromedriver.exe");
 		driver = new ChromeDriver();  
 		report=ExtentManager.GetExtent();	
+		try {
+			U1=ExcelData.Username();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}	
 	
 	@AfterTest
