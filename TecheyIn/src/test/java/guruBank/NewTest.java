@@ -1,4 +1,4 @@
-package Demo;
+package guruBank;
 
 import java.io.File;
 import java.io.IOException;
@@ -19,8 +19,8 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.utils.FileUtil;
 
-import ExcelFile.ExcelData;
-import extreports.ExtentManager;
+import excelFiles.ExcelData;
+import extentReports.ExtentManager;
 
 public class NewTest  {
 	

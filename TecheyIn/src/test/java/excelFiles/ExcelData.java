@@ -1,4 +1,4 @@
-package ExcelFile;
+package excelFiles;
 
 import java.io.File;
 import java.io.FileInputStream;
