@@ -5,9 +5,9 @@
     <classes>
       <class name="Demo.NewTest">
         <methods>
+          <include name="Login"/>
           <include name="beforeTest"/>
-          <include name="TestPrint"/>
-          <include name="testEasy"/>
+          <include name="afterTest"/>
         </methods>
       </class> <!-- Demo.NewTest -->
     </classes>

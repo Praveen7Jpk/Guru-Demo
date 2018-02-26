@@ -1,6 +1,12 @@
 package Demo;
 
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
@@ -11,6 +17,7 @@ import org.testng.annotations.Test;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.utils.FileUtil;
 
 import extreports.ExtentManager;
 
@@ -29,6 +36,21 @@ public class NewTest  {
 		Assert.assertTrue(title.contains("Guru99 Bank Home Page")); 	
 		System.out.println("The System has Successfully checked the Bank Page");
 		
+		//Taking Screenshots
+		File Src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		
+		try {
+			 // now copy the  screenshot to desired location using copyFile //method
+			FileUtils.copyFile(Src, new File("C:\\Users\\praveen kumar J\\Documents\\ScreenShots\\ScreenShot01.png"));
+			}
+			 
+			catch (IOException e)
+			 {
+			  System.out.println(e.getMessage());
+			 
+			 }
+		
+		
 		//TestReport Creation_01
 		logger=report.createTest("Guru99 Bank Website", "Check for Title of the page");
 	    //Logs Test Results 
@@ -36,11 +58,12 @@ public class NewTest  {
 	}	  
 	
 	@Test(priority=2)
-	public void Login() throws InterruptedException {
-	
+	public void Login(){
+	     ExcelData ed=new ExcelData();
+		 System.out.println("The Website is up Username : "+String.valueOf(ed.User));
 		//User Login Credentials 
-		 driver.findElement(By.name("uid")).sendKeys("mngr120253");
-		 driver.findElement(By.name("password")).sendKeys("numAmAt");
+		 driver.findElement(By.name("uid")).sendKeys(String.valueOf(ed.User));
+		 driver.findElement(By.name("password")).sendKeys(String.valueOf(ed.Password));
 		 driver.findElement(By.name("btnLogin")).click();
 		 String Page_title="Guru99 Bank Manager HomePage";
 		 Assert.assertEquals(driver.getTitle(), Page_title);
@@ -51,6 +74,18 @@ public class NewTest  {
 		logger.log(Status.INFO, "Check for User Logging Function");
 		//logger.fail("Failed Method Verification");
 		
+		File Src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		
+		try {
+			 // now copy the  screenshot to desired location using copyFile //method
+			FileUtils.copyFile(Src, new File("C:\\Users\\praveen kumar J\\Documents\\ScreenShots\\ScreenShot01.png"));
+			}
+			 
+			catch (IOException e)
+			 {
+			  System.out.println(e.getMessage());
+			 
+			 }
 	}
 	
 	@BeforeTest
