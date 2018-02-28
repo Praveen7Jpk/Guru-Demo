@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.By;
+//import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -21,6 +21,7 @@ import com.aventstack.extentreports.Status;
 
 import excelFiles.ExcelData;
 import extentReports.ExtentManager;
+import pageObject.Login_PF;
 
 public class NewTest  {
 	
@@ -28,6 +29,8 @@ public class NewTest  {
 	 ExtentTest logger;
 	 WebDriver driver;
 	 String U1;
+	 
+	 Login_PF loginpage;
 	
 	@Test(priority=1)				
 	public void Website_Page() {	
@@ -64,9 +67,18 @@ public class NewTest  {
 	    // String U1=ExcelData.Username();
 		 //System.out.println("The Website is up Username : "+U1);
 		//User Login Credentials 
-		 driver.findElement(By.name("uid")).sendKeys(ExcelData.User);
+	/*	 driver.findElement(By.name("uid")).sendKeys(ExcelData.User);
 		 driver.findElement(By.name("password")).sendKeys(ExcelData.Password);
-		 driver.findElement(By.name("btnLogin")).click();
+		 driver.findElement(By.name("btnLogin")).click();*/
+		
+		//POM with PageFactory Desgin pattern
+		
+		loginpage.Text_user_name(ExcelData.User);
+		loginpage.Text_password_name(ExcelData.Password);
+		loginpage.Login_Button();
+		
+		
+		//Site Title verfication
 		 String Page_title="Guru99 Bank Manager HomePage";
 		 Assert.assertEquals(driver.getTitle(), Page_title);
 		 System.out.println("The System has Successfully LoggedIn");
@@ -101,6 +113,9 @@ public class NewTest  {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		//Create a object for that class in POM pagefactory
+		loginpage=new Login_PF(driver);
+		
 	}	
 	
 	@AfterTest
