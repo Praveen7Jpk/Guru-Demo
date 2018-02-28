@@ -38,8 +38,8 @@ public class ExtentManager {
         return htmlReporter;
 	}
 	
-	/*public static ExtentTest createTest(String name, String description){
-		logger = report.createTest(name, description);
-		return logger;
-	}*/
+	public static ExtentTest createTest(String name, String description){
+		Test = Extent.createTest(name, description);
+		return Test;
+	}
 }
