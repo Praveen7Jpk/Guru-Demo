@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Demo.NewTest">
+      <class name="guruBank.NewTest">
         <methods>
-          <include name="Login"/>
-          <include name="beforeTest"/>
           <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="Login"/>
         </methods>
-      </class> <!-- Demo.NewTest -->
+      </class> <!-- guruBank.NewTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
