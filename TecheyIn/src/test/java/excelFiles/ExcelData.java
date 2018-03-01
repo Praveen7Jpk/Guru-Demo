@@ -17,7 +17,7 @@ public class ExcelData {
 	public static String User;
 	public static String Password;
 
-	public static String Username() throws IOException {
+	public static String ReadData() throws IOException {
 		// TODO Auto-generated method stub
  System.out.println("Enterd_Check01");
 		File src=new File("C:\\Users\\praveen kumar J\\Documents\\test01.xlsx");

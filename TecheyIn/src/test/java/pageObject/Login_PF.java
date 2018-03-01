@@ -12,6 +12,7 @@ public class Login_PF {
 	
 	//Constructor for driver,As every page requires  base driver
 	public Login_PF (WebDriver driver) {
+		//"this" keyword is the instance of class(Login_PF)
 		this.driver=driver;
 		
 		//This initElement will create all web elements 
