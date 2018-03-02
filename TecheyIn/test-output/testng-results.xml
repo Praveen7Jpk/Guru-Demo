@@ -1,57 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="2" failed="0" total="2" passed="0">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="95" started-at="2018-03-02T01:01:47Z" finished-at="2018-03-02T01:01:47Z">
+  <suite name="Default suite" duration-ms="22369" started-at="2018-03-02T06:20:16Z" finished-at="2018-03-02T06:20:38Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="95" started-at="2018-03-02T01:01:47Z" finished-at="2018-03-02T01:01:47Z">
+    <test name="Default test" duration-ms="22369" started-at="2018-03-02T06:20:16Z" finished-at="2018-03-02T06:20:38Z">
       <class name="guruBank_Test.NewTest">
-        <test-method status="FAIL" signature="beforeTest(java.lang.String)[pri:0, instance:guruBank_Test.NewTest@5cb9f472]" name="beforeTest" is-config="true" duration-ms="0" started-at="2018-03-02T06:31:47Z" finished-at="2018-03-02T06:31:47Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by @Configuration on method beforeTest but has not been marked @Optional or defined
-in C:\Users\praveen kumar J\AppData\Local\Temp\testng-eclipse-741962193\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by @Configuration on method beforeTest but has not been marked @Optional or defined
-in C:\Users\praveen kumar J\AppData\Local\Temp\testng-eclipse-741962193\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParameters(Parameters.java:155)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:355)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:86)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:199)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:641)
-	at org.testng.TestRunner.run(TestRunner.java:609)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:guruBank_Test.NewTest@59ec2012]" name="beforeTest" is-config="true" duration-ms="6475" started-at="2018-03-02T11:50:16Z" finished-at="2018-03-02T11:50:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="SKIP" signature="Website_Page()[pri:0, instance:guruBank_Test.NewTest@5cb9f472]" name="Website_Page" duration-ms="10" started-at="2018-03-02T06:31:47Z" finished-at="2018-03-02T06:31:47Z">
+        <test-method status="PASS" signature="Website_Page()[pri:0, instance:guruBank_Test.NewTest@59ec2012]" name="Website_Page" duration-ms="6780" started-at="2018-03-02T11:50:23Z" finished-at="2018-03-02T11:50:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Website_Page -->
-        <test-method status="SKIP" signature="Login()[pri:0, instance:guruBank_Test.NewTest@5cb9f472]" name="Login" duration-ms="5" started-at="2018-03-02T06:31:47Z" finished-at="2018-03-02T06:31:47Z">
+        <test-method status="PASS" signature="Login()[pri:0, instance:guruBank_Test.NewTest@59ec2012]" name="Login" duration-ms="6816" started-at="2018-03-02T11:50:29Z" finished-at="2018-03-02T11:50:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method status="SKIP" signature="afterTest()[pri:0, instance:guruBank_Test.NewTest@5cb9f472]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-03-02T06:31:47Z" finished-at="2018-03-02T06:31:47Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:guruBank_Test.NewTest@59ec2012]" name="afterTest" is-config="true" duration-ms="2260" started-at="2018-03-02T11:50:36Z" finished-at="2018-03-02T11:50:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
