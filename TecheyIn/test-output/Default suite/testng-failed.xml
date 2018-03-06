@@ -5,6 +5,8 @@
     <classes>
       <class name="guruBank_Test.NewTest">
         <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
           <include name="Website_Page"/>
           <include name="Login"/>
         </methods>
