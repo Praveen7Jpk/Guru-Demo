@@ -11,7 +11,7 @@ public class ExtentManager {
 	public static ExtentHtmlReporter htmlReporter;
 	public static String filePath = "C:\\Users\\praveen kumar J\\Documents\\Reports\\ExtentReport_Results03.html";
 	
-	
+	 
 	public static ExtentReports GetExtent(){
 		if (Extent != null)
                     return Extent;   //avoid creating new instance of html file
