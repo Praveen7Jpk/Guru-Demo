@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="75129" started-at="2018-03-06T17:33:58Z" finished-at="2018-03-06T17:35:13Z">
+  <suite name="Default suite" duration-ms="65761" started-at="2018-03-17T18:46:21Z" finished-at="2018-03-17T18:47:26Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="75129" started-at="2018-03-06T17:33:58Z" finished-at="2018-03-06T17:35:13Z">
+    <test name="Default test" duration-ms="65761" started-at="2018-03-17T18:46:21Z" finished-at="2018-03-17T18:47:26Z">
       <class name="guruBank_Test.NewTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:guruBank_Test.NewTest@59ec2012]" name="beforeTest" is-config="true" duration-ms="35142" started-at="2018-03-06T23:03:58Z" finished-at="2018-03-06T23:04:33Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:guruBank_Test.NewTest@4667ae56]" name="beforeTest" is-config="true" duration-ms="46093" started-at="2018-03-18T00:16:21Z" finished-at="2018-03-18T00:17:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="Website_Page()[pri:0, instance:guruBank_Test.NewTest@59ec2012]" name="Website_Page" duration-ms="15641" started-at="2018-03-06T23:04:33Z" finished-at="2018-03-06T23:04:49Z">
+        <test-method status="PASS" signature="Website_Page()[pri:0, instance:guruBank_Test.NewTest@4667ae56]" name="Website_Page" duration-ms="9323" started-at="2018-03-18T00:17:07Z" finished-at="2018-03-18T00:17:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Website_Page -->
-        <test-method status="PASS" signature="Login()[pri:0, instance:guruBank_Test.NewTest@59ec2012]" name="Login" duration-ms="19486" started-at="2018-03-06T23:04:49Z" finished-at="2018-03-06T23:05:09Z">
+        <test-method status="PASS" signature="Login()[pri:0, instance:guruBank_Test.NewTest@4667ae56]" name="Login" duration-ms="3041" started-at="2018-03-18T00:17:16Z" finished-at="2018-03-18T00:17:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:guruBank_Test.NewTest@59ec2012]" name="afterTest" is-config="true" duration-ms="4761" started-at="2018-03-06T23:05:09Z" finished-at="2018-03-06T23:05:13Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:guruBank_Test.NewTest@4667ae56]" name="afterTest" is-config="true" duration-ms="7209" started-at="2018-03-18T00:17:19Z" finished-at="2018-03-18T00:17:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
